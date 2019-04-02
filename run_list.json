@@ -1,0 +1,14 @@
+{
+  "tomcat": {
+    "packages_path": "/vagrant/packages",
+    "home": "/vagrant/packages/tomcat",
+    "version": "9.0.17",
+    "user": "vagrant",
+    "group": "vagrant",
+    "port": "7777"
+  },
+  "java": {
+    "home": "/vagrant/packages/java"
+  },
+  "run_list": ["tomcat::install", "tomcat::config", "tomcat::start"]
+}
